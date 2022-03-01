@@ -1,3 +1,4 @@
 import { FilteredGrid } from './filteredGrid/FilteredGrid';
+import { SearchInput } from './SearchInput/SearchInput';
 
-export { FilteredGrid };
+export { FilteredGrid, SearchInput };

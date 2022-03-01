@@ -1,6 +1,5 @@
 import React from 'react';
-import { FilteredGrid } from './features';
-import { SearchInput } from './shared/ui';
+import { FilteredGrid, SearchInput } from './features';
 
 function App() {
   return (
