@@ -6,7 +6,7 @@ export interface GlossaryItem {
     translatable: boolean;
     forbidden: boolean;
     createdAt: string;
-    createdby: User;
+    createdBy: User;
 }
 
 interface User {
