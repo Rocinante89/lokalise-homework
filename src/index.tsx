@@ -8,6 +8,7 @@ import {
   QueryClientProvider,
 } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
+import "typeface-roboto";
 
 const queryClient = new QueryClient();
 

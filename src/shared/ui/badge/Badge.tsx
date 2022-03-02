@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { determineBadgeColour } from './helpers/determineBadgeColour';
+import { BadgeColour, determineBadgeColour } from './helpers/determineBadgeColour';
 
 interface IBadgeProps {
     label: string;
-    colour: 'red' | 'blue' | 'gray';
+    colour: BadgeColour;
 }
 
 export const Badge: React.FunctionComponent<IBadgeProps> = ({ colour, label }) => {
