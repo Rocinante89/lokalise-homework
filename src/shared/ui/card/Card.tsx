@@ -5,7 +5,7 @@ interface ICardProps {
     title: string;
     description: string;
     date: Date;
-    userName: string;
+    userName?: string;
     options: ICardOptionsProps;
 }
 
