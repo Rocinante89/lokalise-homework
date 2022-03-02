@@ -7,11 +7,11 @@ export const FilteredGrid: React.FunctionComponent = () => {
 
     return <div className='grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3'>
         {data?.map(item => <Card
-            date={new Date(item.createdAt)}
+            date={item.createdAt}
             description={item.description}
             options={{ caseSensitive: item.caseSensitive, forbidden: item.forbidden, translatable: item.translatable }}
             title={item.title}
-            // userName={item.createdby.fullName}
+            userName={item.createdBy.fullName}
             key={item.id}
         />)}
     </div>;

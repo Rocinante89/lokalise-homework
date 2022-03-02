@@ -1,9 +1,10 @@
 import { faker } from '@faker-js/faker';
 import { render } from '@testing-library/react';
+import format from 'date-fns/format';
 import { Card } from './Card';
 
 describe('the card', () => {
-    const testDate = faker.date.recent();
+    const testDate = faker.date.recent().toISOString();
     const testDescription = faker.lorem.paragraph();
     const testTitle = faker.lorem.sentence();
     const testName = faker.name.findName();
@@ -28,7 +29,7 @@ describe('the card', () => {
         expect(getByRole('heading')).toHaveTextContent(testTitle);
         expect(getByText((content) => content.includes(testDescription))).toBeTruthy();
         expect(getByText((content) => content.includes(testName))).toBeTruthy();
-        expect(getByText((content) => content.includes(testDate.toLocaleString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })))).toBeTruthy();
+        expect(getByText((content) => content.includes(format(new Date(testDate), "dd MMM',' yyyy")))).toBeTruthy();
     });
 
     describe('options', () => {

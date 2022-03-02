@@ -9,7 +9,7 @@ export const mockGlossaryList = (): Array<GlossaryItem> => [{
     translatable: faker.datatype.boolean(),
     forbidden: faker.datatype.boolean(),
     createdAt: faker.date.past().toISOString(),
-    createdby: {
+    createdBy: {
         id: faker.datatype.uuid(),
         fullName: faker.name.findName(),
     }
@@ -22,7 +22,7 @@ export const mockGlossaryList = (): Array<GlossaryItem> => [{
     translatable: faker.datatype.boolean(),
     forbidden: faker.datatype.boolean(),
     createdAt: faker.date.past().toISOString(),
-    createdby: {
+    createdBy: {
         id: faker.datatype.uuid(),
         fullName: faker.name.findName(),
     }
@@ -35,7 +35,7 @@ export const mockGlossaryList = (): Array<GlossaryItem> => [{
     translatable: faker.datatype.boolean(),
     forbidden: faker.datatype.boolean(),
     createdAt: faker.date.past().toISOString(),
-    createdby: {
+    createdBy: {
         id: faker.datatype.uuid(),
         fullName: faker.name.findName(),
     }
