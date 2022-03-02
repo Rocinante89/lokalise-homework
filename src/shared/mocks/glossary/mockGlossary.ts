@@ -1,5 +1,5 @@
 import faker from '@faker-js/faker';
-import { GlossaryItem } from '../interfaces';
+import { GlossaryItem } from '../../api/glossary/interfaces';
 
 export const mockGlossaryList = (): Array<GlossaryItem> => [{
     id: faker.datatype.uuid(),

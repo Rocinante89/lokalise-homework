@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "@tailwindcss/forms": "0.4.0",
+    "@testing-library/react-hooks": "^7.0.2",
     "autoprefixer": "10.4.2",
     "msw": "0.38.1",
     "postcss": "8.4.7",
